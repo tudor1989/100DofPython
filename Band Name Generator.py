@@ -1,3 +1,5 @@
+# This is to practice string concatenation 
+
 # 1. Create a greeting for your program. 
 print("Hello Friend! Welcome to Band Name Generator!")
 
