@@ -23,7 +23,10 @@ bill = float(bill)
 people = int(people)
 tip = int(tip)
 
+# alternative can be bill = int(input())
+
 # calculate amount to pay per person rounded to 2 decimal points.
 to_pay = (bill + bill * tip/100) / people 
 
 print(f"You have to pay ${round(to_pay,2)}")
+
