@@ -25,8 +25,10 @@ tip = int(tip)
 
 # alternative can be bill = int(input())
 
-# calculate amount to pay per person rounded to 2 decimal points.
+# calculate amount to pay per person formated to 2 decimal points. 
 to_pay = (bill + bill * tip/100) / people 
 
-print(f"You have to pay ${round(to_pay,2)}")
+to_pay_format = "{:.2f}".format(to_pay)
+
+print(f"You have to pay ${to_pay_format}")
 
