@@ -6,17 +6,25 @@ year = int(input("Give the year to test: "))
 # if NO > NOT a Leap Year
 # if YES > test 2nd condition
 
-if year % 4 > 0:
-  print(f"Your year {year} is not a leap year!")
+  
 # 2nd condition: is it cleanly divisible by 100? 
 # if NO - Leap Year
 #if YES - test 3rd condition
-elif year % 100 > 0:
-  print(f"Your year {year} is a leap year!")
+  
+    
 # 3rd condition: Is it cleanly divisible by 400? 
 # if YES > Leap Year
 # if NO > NOT a Leap Year
-elif year % 400 > 0:
-  print(f"Your year {year} is not a leap year!")
+
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print(f"Your year {year} is a leap year!")
+    else:
+      print(f"Your year {year} is not a leap year. ")
+  else:
+    print(f"Your year {year} is a leap year")
 else:
-  print(f"Your year {year} is a leap year!")
+  print(f"Your year {year} is not a leap year! ")
+    
