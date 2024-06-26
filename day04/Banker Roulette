@@ -1,12 +1,5 @@
 import random
 
-#names = name_string.split(",")
-
-#names = ["Tudor", "Alexandra", "Mihai", "Diana"]
-
-#print(names)
-
-#random.shuffle(names)
 
 names_string = input("What are the names? ")
 
@@ -14,7 +7,7 @@ names = names_string.split(",")
 
 print(names)
 
-# variable for how many items to be picked by the random function
+# variable to determine how many random picks will be executed 
 
 pick = 1 
 
