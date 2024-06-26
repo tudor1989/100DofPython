@@ -1,0 +1,31 @@
+import random
+
+#names = name_string.split(",")
+
+#names = ["Tudor", "Alexandra", "Mihai", "Diana"]
+
+#print(names)
+
+#random.shuffle(names)
+
+names_string = input("What are the names? ")
+
+names = names_string.split(",")
+
+print(names)
+
+# variable for how many items to be picked by the random function
+
+pick = 1 
+
+# using the sample function to randomply pick a sample from the list 
+
+choice = random.sample(names, pick)
+
+#formatting result to string to be printed 
+
+result = str(*choice)
+
+#print(result_choice)
+
+print(f"{result} is going to pay the meal today!")
