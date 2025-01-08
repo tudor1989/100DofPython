@@ -15,3 +15,16 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+
+
+#Random Module functions to use 
+
+random.random(): This function returns a random floating-point number in the range of [0.0, 1.0). It is useful for generating random numbers for simulations or other applications.
+
+random.randint(a, b): This function returns a random integer between a and b, inclusive. It is helpful for selecting a random element from a list or generating random numbers within a specific range.
+
+random.choice(seq): This function returns a random element from a sequence, such as a list, tuple, or string. It is convenient for selecting random items from a collection.
+
+random.shuffle(seq): This function shuffles the elements of a sequence in place, meaning it modifies the original sequence directly. It is commonly used to randomize the order of items in a list.
+
+random.sample(population, k): This function returns a k length list of unique elements chosen from the population sequence or set. Used for random sampling without replacement.
