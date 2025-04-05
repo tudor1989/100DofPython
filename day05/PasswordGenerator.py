@@ -28,3 +28,25 @@ random.choice(seq): This function returns a random element from a sequence, such
 random.shuffle(seq): This function shuffles the elements of a sequence in place, meaning it modifies the original sequence directly. It is commonly used to randomize the order of items in a list.
 
 random.sample(population, k): This function returns a k length list of unique elements chosen from the population sequence or set. Used for random sampling without replacement.
+
+
+######################################################################
+#generate the number of letters 
+
+letter_list = random.choices(letters, k = nr_letters)
+
+#generate the numbers list 
+
+num_list = random.choices(numbers, k = nr_numbers)
+
+#generate the symbols list
+
+symbol_list = random.choices(symbols, k = nr_symbols)
+
+#concatenate results into a new list 
+
+password_list = letter_list + num_list + symbol_list 
+
+print(password_list)
+
+your_pass = random.shuffle(password_list)
