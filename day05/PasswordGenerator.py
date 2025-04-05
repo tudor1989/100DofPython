@@ -47,6 +47,10 @@ symbol_list = random.choices(symbols, k = nr_symbols)
 
 password_list = letter_list + num_list + symbol_list 
 
-print(password_list)
+#shuffle the order of the elements
 
 your_pass = random.shuffle(password_list)
+
+#generate password
+
+print("Your password: ", "".join(password_list))
